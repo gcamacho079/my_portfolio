@@ -10,7 +10,11 @@ body {
 .content-wrapper {
   margin: 0 auto;
   max-width: 650px;
-  width: 80%;
+  width: 75%;
+}
+
+.gallery-wrapper {
+
 }
 
 .section_odd,
@@ -43,7 +47,10 @@ p {
 .fa {
   font-size: 3em;
   padding: 0 .5em;
-  color: #333;
+}
+
+.portfolio-link {
+  font-size: 1.5em;
 }
 
 /**********
@@ -59,19 +66,37 @@ p {
    color: #4AB19A;
  }
 
+ a,
+ a:visited {
+   color: #4AB19A;
+   text-decoration: none;
+ }
+
+ a:hover,
+ a:focus {
+   color: #666;
+ }
+
+ .fa {
+     color: #333;
+ }
+
  .fa:hover,
  .fa:focus {
    color: #7DCC93;
  }
+
 
 /**********
  Multimedia
  **********/
 
  img {
+   max-width: 500px;
    width: 100%;
  }
 
  .gallery-object {
    display: inline-block;
+   padding: 1em 0;
  }
