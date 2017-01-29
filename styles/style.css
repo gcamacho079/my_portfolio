@@ -4,11 +4,18 @@
 
 body {
   text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .content-wrapper {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 650px;
+  width: 80%;
+}
+
+.section_odd,
+.section_even {
+  padding: 2em 0;
 }
 
 
@@ -16,33 +23,55 @@ body {
  Typography
  **********/
 h1 {
-  font-size: 1.6em
+  font-size: 3em;
+  font-family: 'Dawning of a New Day', cursive;
 }
 
 h2 {
+  font-size: 1.7em;
+  font-family: 'Lato', sans-serif;
+}
+
+h3 {
   font-size: 1.5em;
 }
 
-h3 {
-  font-size: 1.4em;
-}
-
-h1,
-h2,
-h3 {
-  font-family: 'Bree Serif', serif;
-}
-
 p {
-  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.2em;
 }
+
+.fa {
+  font-size: 3em;
+  padding: 0 .5em;
+  color: #333;
+}
+
+/**********
+ Color Scheme
+ **********/
+
+ .section_odd {
+   background-color: #E0EBE8;
+ }
+
+ h1,
+ h2 {
+   color: #4AB19A;
+ }
+
+ .fa:hover,
+ .fa:focus {
+   color: #7DCC93;
+ }
 
 /**********
  Multimedia
  **********/
 
  img {
-   
-   max-width: 40em;
+   width: 100%;
+ }
+
+ .gallery-object {
+   display: inline-block;
  }
