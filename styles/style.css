@@ -1,0 +1,48 @@
+/**********
+ General
+ **********/
+
+body {
+  text-align: center;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+
+/**********
+ Typography
+ **********/
+h1 {
+  font-size: 1.6em
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Bree Serif', serif;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.2em;
+}
+
+/**********
+ Multimedia
+ **********/
+
+ img {
+   
+   max-width: 40em;
+ }
