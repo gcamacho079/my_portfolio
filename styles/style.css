@@ -13,8 +13,19 @@ body {
   width: 75%;
 }
 
-.gallery-wrapper {
+#mini-terminal p {
+  padding: 1em;
+}
 
+#end-line:after {
+  content: "_";
+  animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+  50% {
+    opacity: 0;
+  }
 }
 
 .section_top,
@@ -44,13 +55,14 @@ p {
   font-size: 1.2em;
 }
 
+#mini-terminal p {
+  text-align: left;
+  font-family: monospace;
+}
+
 .fa {
   font-size: 3em;
   padding: 0 .5em;
-}
-
-.portfolio-link {
-  font-size: 1.5em;
 }
 
 /**********
@@ -63,6 +75,18 @@ p {
 
  .section_alt {
    background-color: #f5f5f5;
+ }
+
+ #mini-terminal {
+   background-color: #000;
+ }
+
+ #mini-terminal p {
+   color: #fff;
+ }
+
+ #terminal-highlight {
+   color: #4AB19A;
  }
 
  h1,
