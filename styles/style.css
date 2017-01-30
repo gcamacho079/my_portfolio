@@ -23,6 +23,16 @@ body {
   padding: 1em 0;
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  display: inline;
+  padding: 0 1em;
+}
+
 
 
 /**********
@@ -61,7 +71,7 @@ body {
    color: #fff;
  }
 
- #terminal-highlight {
+ .terminal-highlight {
    color: #4AB19A;
  }
 
@@ -77,6 +87,11 @@ h1 {
 h2 {
   font-size: 1.7em;
   font-family: 'Lato', sans-serif;
+}
+
+ul {
+  font-family: "Lato", sans sans-serif;
+  font-size: 1.2em;
 }
 
 h3 {

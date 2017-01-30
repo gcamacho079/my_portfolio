@@ -23,12 +23,17 @@
 
 <body>
 
-  <div class="section_top">
+  <div id="top-of-page" class="section_top">
     <h1>Lupe Camacho</h1>
     <h2>web developer</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </div>
 
-  <div class="section">
+  <div class="section" id="about">
     <div class="content-wrapper">
 
       <h3 id="about-me">About Me</h3>
@@ -49,10 +54,11 @@
     </div>
 
       <div id="terminal-block">
-        <h3>My Philosophies</h3>
+        <h3>My Philosophy</h3>
+        <p>Quotes by other people, <strong><span class="terminal-highlight">rewritten</span></strong> by me.</p>
         <div id="mini-terminal">
-          <p>"<span id="terminal-highlight">Coding</span>, to me, is simply thinking through my fingers."</p>
-          <p>- My take on <span id="end-line">Isaac Asimov</span></p>
+          <p>"<span class="terminal-highlight">Coding</span>, to me, is simply thinking through my fingers."</p>
+          <p>- <span id="end-line">Isaac Asimov</span></p>
         </div>
         <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
 
@@ -60,7 +66,7 @@
     </div>
   </div>
 
-  <div class="section_alt">
+  <div class="section_alt" id="portfolio">
     <div class="content-wrapper">
       <h3>Portfolio</h3>
       <div class="gallery">
@@ -132,24 +138,31 @@
     </div>
   </div>
 
-  <div class="section">
-    <h3>Contact</h3>
-    <a href="https://github.com/gcamacho079" target="_blank">
-      <i class="fa fa-github" aria-hidden="true"></i>
-    </a>
+  <div class="section" id="contact">
+    <div class="content-wrapper">
+      <h3>Contact</h3>
+      <a href="https://github.com/gcamacho079" target="_blank">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
 
-    <a href="https://www.linkedin.com/in/guadalupe-camacho-008a57115" target="_blank">
-      <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-    </a>
+      <a href="https://www.linkedin.com/in/guadalupe-camacho-008a57115" target="_blank">
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+      </a>
 
-    <a href="mailto:gcamacho079@gmail.com">
-      <i class="fa fa-envelope" aria-hidden="true"></i>
-    </a>
+      <a href="mailto:gcamacho079@gmail.com">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+      </a>
+    </div>
   </div>
 
   <footer class="section_alt">
-    <p>&copy; 2017 Guadalupe Camacho</p>
-    <p>View the <a href="https://github.com/gcamacho079/my_portfolio" target="_blank">Github repository</a> for this project.</p>
+    <div class="content-wrapper">
+      <a href="#top-of-page">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+      </a>
+      <p>&copy; 2017 Guadalupe Camacho</p>
+      <p>View the <a href="https://github.com/gcamacho079/my_portfolio" target="_blank">Github repository</a> for this project.</p>
+    </div>
   </footer>
 
 </body>
