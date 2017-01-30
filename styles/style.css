@@ -17,8 +17,8 @@ body {
 
 }
 
-.section_odd,
-.section_even {
+.section_top,
+.section_alt {
   padding: 2em 0;
 }
 
@@ -57,8 +57,12 @@ p {
  Color Scheme
  **********/
 
- .section_odd {
+ .section_top {
    background-color: #E0EBE8;
+ }
+
+ .section_alt {
+   background-color: #f5f5f5;
  }
 
  h1,
