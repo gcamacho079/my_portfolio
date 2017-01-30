@@ -1,0 +1,13 @@
+@media screen and (min-width: 1000px) {
+  #my-pic {
+    float: right;
+    display: inline-block;
+    width: 30%;
+  }
+
+  .aside {
+    float: left;
+    display: block;
+    width: 70%;
+  }
+}
