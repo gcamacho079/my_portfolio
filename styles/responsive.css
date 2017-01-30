@@ -1,13 +1,28 @@
 @media screen and (min-width: 1000px) {
-  #my-pic {
-    float: right;
-    display: inline-block;
-    width: 30%;
-  }
+
 
   .aside {
-    float: left;
-    display: block;
-    width: 70%;
+    margin-right: 35%;
+    text-align: right;
   }
+
+  #my-pic {
+    width: 30%;
+    float: right;
+
+  }
+
+  /**********
+   Fix image container overflow after floating
+   **********/
+
+  .clearfix {
+    overflow: auto;
+    zoom: 1;
+  }
+
+  #spacer {
+    clear: both;
+  }
+
 }

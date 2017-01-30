@@ -10,7 +10,7 @@ body {
 .content-wrapper {
   margin: 0 auto;
   max-width: 650px;
-  width: 75%;
+  width: 85%;
 }
 
 .section_top,
@@ -18,6 +18,12 @@ body {
 .section_alt {
   padding: 2em 0;
 }
+
+.gallery-object {
+  padding: 1em 0;
+}
+
+
 
 /**********
  Everything Mini Terminal
@@ -78,8 +84,6 @@ p {
   font-size: 1.2em;
 }
 
-
-
 .fa {
   font-size: 3em;
   padding: 0 .5em;
@@ -127,6 +131,11 @@ p {
  Multimedia
  **********/
 
+ #my-pic {
+   max-width: 200px;
+   border-radius: 3em;
+ }
+
  .portfolio-image {
    max-width: 500px;
    width: 100%;
@@ -135,17 +144,7 @@ p {
    padding: .5em;
  }
 
- .portfolio-image:hover
- .portfolio-image:focus {
+ a.portfolio-image:hover
+ a.portfolio-image:focus {
    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.5);
- }
-
- #my-pic {
-   max-width: 200px;
-   border-radius: 3em;
- }
-
- .gallery-object {
-   display: inline-block;
-   padding: 1em 0;
  }
