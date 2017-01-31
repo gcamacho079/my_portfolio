@@ -4,12 +4,11 @@
 
 body {
   text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .content-wrapper {
   margin: 0 auto;
-  max-width: 650px;
+  max-width: 680px;
   width: 85%;
 }
 
@@ -78,6 +77,10 @@ li {
 /**********
  Typography
  **********/
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
 
 h1 {
   font-size: 3em;

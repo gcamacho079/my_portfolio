@@ -1,6 +1,11 @@
+@media screen and (min-width: 720px) {
+  .content-wrapper {
+    width: 75%;
+  }
+}
+
+
 @media screen and (min-width: 1000px) {
-
-
   .aside {
     margin-right: 35%;
     text-align: right;
@@ -9,7 +14,6 @@
   #my-pic {
     width: 30%;
     float: right;
-
   }
 
   /**********
@@ -24,5 +28,4 @@
   #spacer {
     clear: both;
   }
-
 }
