@@ -33,12 +33,12 @@ li {
 }
 
 
-
 /**********
  Everything Mini Terminal
  **********/
 
  #terminal-block {
+   margin-top: 3em;
  }
 
  #mini-terminal {
@@ -164,3 +164,8 @@ p {
    border-radius: .5em;
    padding: .5em;
  }
+
+.language-logo {
+  height: 100px;
+  margin: .5em .5em;
+}
