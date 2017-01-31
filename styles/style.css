@@ -164,8 +164,3 @@ p {
    border-radius: .5em;
    padding: .5em;
  }
-
- .portfolio-image:hover
- .portfolio-image:focus {
-   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
- }
