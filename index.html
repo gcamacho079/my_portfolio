@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-  <title>Lupe Camacho</title>
+  <title>Lupe Camacho - Web Dev Portfolio</title>
   <meta charset="utf-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,155 +33,168 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
+  <main>
 
-  <div class="section" id="about">
-    <div class="content-wrapper">
+    <!--*********** ABOUT ME ***************-->
 
-      <h3 id="about-me">About Me</h3>
 
-      <div id="blurb" class="clearfix">
 
-        <img id="my-pic" src="images/me.jpg" alt="Picture of me">
+    <section class="section" id="about">
+      <div class="content-wrapper">
 
-        <div class="aside">
-          <p><strong>Hi!</strong> I'm a self-taught web developer from Portland, OR.</p>
+        <h3 id="about-me">About Me</h3>
 
-          <p>I started learning to program and build websites in early 2015 and immediately fell in love with the field. I've been working through the curriculum and projects at <a href="http://www.freecodecamp.com" target="_blank">FreeCodeCamp</a> and <a href="http://www.theodinproject.com" target="_blank">The Odin Project</a> over the last year, and I'm on the lookout for job opportunities that will allow me to develop my coding skills.</p>
+        <div id="blurb" class="clearfix">
+
+          <img id="my-pic" src="images/me.jpg" alt="Picture of me">
+
+          <div class="aside">
+            <p><strong>Hi!</strong> I'm a self-taught web developer from Portland, OR.</p>
+
+            <p>I've been working through the curriculum and projects at <a href="http://www.freecodecamp.com" target="_blank">FreeCodeCamp</a> and <a href="http://www.theodinproject.com" target="_blank">The Odin Project</a> over the last year, and I'm on the lookout for job opportunities that will allow me to develop my coding skills.</p>
+          </div>
+
+          <div id="spacer">
+          </div>
+
+
         </div>
 
-        <div id="spacer">
+        <p>I'm currently working with:</p>
+        <img class="language-logo" src="images/HTML5_oval_logo.png" alt="HTML5 logo">
+        <img class="language-logo" src="images/CSS3_logo.png" alt="CSS3 logo">
+        <img class="language-logo" src="images/200px-Ruby_logo.png" alt="Ruby logo">
+        <img class="language-logo" src="images/Javascript-logo.png" alt="Javascript logo">
+        <img class="language-logo" src="images/jquery.png" alt="jQuery logo">
+
+        <div id="terminal-block">
+          <p><strong>My Philosophy</strong></p>
+
+          <div id="mini-terminal">
+            <p>"<span class="terminal-highlight">Coding*</span>, to me, is simply thinking through my fingers."</p>
+            <p>- <span id="end-line">Isaac Asimov</span></p>
+          </div>
+
+          <p style="text-align:left"><small><strong><span class="terminal-highlight">*Rewritten</span></strong> by me.</small></p>
+          <!-- <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+          Will set this up to cycle through numerous quotes -->
+
         </div>
-
-
       </div>
+    </section>
 
-      <p>I'm currently working with:</p>
-      <img class="language-logo" src="images/HTML5_oval_logo.png" alt="HTML5 logo">
-      <img class="language-logo" src="images/CSS3_logo.png" alt="CSS3 logo">
-      <img class="language-logo" src="images/200px-Ruby_logo.png" alt="Ruby logo">
-      <img class="language-logo" src="images/Javascript-logo.png" alt="Javascript logo">
-      <img class="language-logo" src="images/jquery.png" alt="jQuery logo">
+    <!--*********** PORTFOLIO ***************-->
 
-      <div id="terminal-block">
-        <p><strong>My Philosophy</strong></p>
 
-        <div id="mini-terminal">
-          <p>"<span class="terminal-highlight">Coding*</span>, to me, is simply thinking through my fingers."</p>
-          <p>- <span id="end-line">Isaac Asimov</span></p>
+
+
+    <section class="section_alt" id="portfolio">
+      <div class="content-wrapper">
+        <h3>Portfolio</h3>
+        <div class="gallery">
+
+          <div class="gallery-object">
+            <a href="http://codepen.io/gcamacho079/full/EKaXvL/" target="_blank">
+              <img class="portfolio-image" src="images/asimov_tribute.jpg" alt="Screenshot of my FreeCodeCamp tribute page project">
+            </a>
+            <p><strong>Tribute Page</strong></p>
+            <a href="http://codepen.io/gcamacho079/full/EKaXvL/" target="_blank">
+              <i class="fa fa-external-link portfolio-link" aria-hidden="true"></i>
+            </a>
+            <a href="http://codepen.io/gcamacho079/pen/EKaXvL/" target="_blank">
+              <i class="fa fa-codepen portfolio-link" aria-hidden="true"></i>
+            </a>
+
+            <p>A tribute page for prolific science fiction author Isaac Asimov, built using <strong>Bootstrap</strong>.</p>
+          </div>
+
+          <hr>
+
+          <div class="gallery-object">
+            <a href="https://gcamacho079.github.io/google-homepage/" target="_blank">
+              <img class="portfolio-image" src="images/google_rebuild.jpg" alt="Screenshot of my Google homepage rebuild project (The Odin Project)">
+            </a>
+            <p><strong>Google Rebuild</strong></p>
+            <a href="https://gcamacho079.github.io/google-homepage/" target="_blank">
+              <i class="fa fa-external-link portfolio-link" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/gcamacho079/google-homepage" target="_blank">
+              <i class="fa fa-github portfolio-link" aria-hidden="true"></i>
+            </a>
+            <p>A (non-functional) rebuild of the Google search homepage, using media queries to achieve a <b>responsive, mobile-friendly</b> layout. The desktop version features an "I'm Feeling Lucky" button that repopulates with a randomized saying after mouseover.</p>
+          </div>
+
+          <hr>
+
+          <div class="gallery-object">
+            <a href="https://gcamacho079.github.io/jSketch/" target="_blank">
+              <img class="portfolio-image" src="images/jsketch.jpg" alt="Screenshot of my etch-a-sketch project (The Odin Project)">
+            </a>
+            <p><strong>jSketch</strong></p>
+            <a href="https://gcamacho079.github.io/jSketch/" target="_blank">
+              <i class="fa fa-external-link portfolio-link" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/gcamacho079/jSketch" target="_blank">
+              <i class="fa fa-github portfolio-link" aria-hidden="true"></i>
+            </a>
+            <p>A browser-based etch-a-sketch built with <strong>Javascript</strong> and <strong>jQuery</strong>.</p>
+          </div>
+
+          <hr>
+
+          <div class="gallery-object">
+            <a href="https://gcamacho079.github.io/LocalWeatherAPI/" target="_blank">
+              <img class="portfolio-image" src="images/weather_api.jpg" alt="Screenshot of my local weather app project">
+            </a>
+            <p><strong>Local Weather</strong></p>
+            <a href="https://gcamacho079.github.io/LocalWeatherAPI/" target="_blank">
+              <i class="fa fa-external-link portfolio-link" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/gcamacho079/LocalWeatherAPI" target="_blank">
+              <i class="fa fa-github portfolio-link" aria-hidden="true"></i>
+            </a>
+            <p>A local weather application utilizing <strong>jQuery</strong> and the <strong>Open Weather API</strong>. Features on-click temperature conversion and background images that vary depending on the temperature.</p>
+          </div>
+
+          <hr>
+
+          <div class="gallery-object">
+            <a href="http://www.thewilderband.com/" target="_blank">
+              <img class="portfolio-image" src="images/wilderband.jpg" alt="Screenshot of The Wilder band's website">
+            </a>
+            <p><strong>The Wilder Band Website</strong></p>
+            <a href="http://www.thewilderband.com/" target="_blank">
+              <i class="fa fa-external-link portfolio-link" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/gcamacho079/new-wilder-site" target="_blank">
+              <i class="fa fa-github portfolio-link" aria-hidden="true"></i>
+            </a>
+            <p>A <strong>Bootstrap</strong> website for Portland rock 'n' roll band, The Wilder. Features a collapsible navigation bar for mobile-viewing.</p>
+          </div>
+
         </div>
-
-        <p style="text-align:left"><small><strong><span class="terminal-highlight">*Rewritten</span></strong> by me.</small></p>
-        <!-- <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-        Will set this up to cycle through numerous quotes -->
-
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="section_alt" id="portfolio">
-    <div class="content-wrapper">
-      <h3>Portfolio</h3>
-      <div class="gallery">
+    <!--*********** CONTACT ***************-->
 
-        <div class="gallery-object">
-          <a href="http://codepen.io/gcamacho079/full/EKaXvL/" target="_blank">
-            <img class="portfolio-image" src="images/asimov_tribute.jpg" alt="Screenshot of my FreeCodeCamp tribute page project">
-          </a>
-          <p><strong>Tribute Page</strong></p>
-          <a href="http://codepen.io/gcamacho079/full/EKaXvL/" target="_blank">
-            <i class="fa fa-external-link portfolio-link" aria-hidden="true"></i>
-          </a>
-          <a href="http://codepen.io/gcamacho079/pen/EKaXvL/" target="_blank">
-            <i class="fa fa-codepen portfolio-link" aria-hidden="true"></i>
-          </a>
+    <section class="section" id="contact">
+      <div class="content-wrapper">
+        <h3>Contact</h3>
+        <a href="https://github.com/gcamacho079" target="_blank">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
 
-          <p>A tribute page for prolific science fiction author Isaac Asimov, built using <strong>Bootstrap</strong>.</p>
-        </div>
+        <a href="https://www.linkedin.com/in/guadalupe-camacho-008a57115" target="_blank">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
 
-        <hr>
-
-        <div class="gallery-object">
-          <a href="https://gcamacho079.github.io/google-homepage/" target="_blank">
-            <img class="portfolio-image" src="images/google_rebuild.jpg" alt="Screenshot of my Google homepage rebuild project (The Odin Project)">
-          </a>
-          <p><strong>Google Rebuild</strong></p>
-          <a href="https://gcamacho079.github.io/google-homepage/" target="_blank">
-            <i class="fa fa-external-link portfolio-link" aria-hidden="true"></i>
-          </a>
-          <a href="https://github.com/gcamacho079/google-homepage" target="_blank">
-            <i class="fa fa-github portfolio-link" aria-hidden="true"></i>
-          </a>
-          <p>A (non-functional) rebuild of the Google search homepage, using media queries to achieve a <b>responsive, mobile-friendly</b> layout. The desktop version features an "I'm Feeling Lucky" button that repopulates with a randomized saying after mouseover.</p>
-        </div>
-
-        <hr>
-
-        <div class="gallery-object">
-          <a href="https://gcamacho079.github.io/jSketch/" target="_blank">
-            <img class="portfolio-image" src="images/jsketch.jpg" alt="Screenshot of my etch-a-sketch project (The Odin Project)">
-          </a>
-          <p><strong>jSketch</strong></p>
-          <a href="https://gcamacho079.github.io/jSketch/" target="_blank">
-            <i class="fa fa-external-link portfolio-link" aria-hidden="true"></i>
-          </a>
-          <a href="https://github.com/gcamacho079/jSketch" target="_blank">
-            <i class="fa fa-github portfolio-link" aria-hidden="true"></i>
-          </a>
-          <p>A browser-based etch-a-sketch built with <strong>Javascript</strong> and <strong>jQuery</strong>.</p>
-        </div>
-
-        <hr>
-
-        <div class="gallery-object">
-          <a href="https://gcamacho079.github.io/LocalWeatherAPI/" target="_blank">
-            <img class="portfolio-image" src="images/weather_api.jpg" alt="Screenshot of my local weather app project">
-          </a>
-          <p><strong>Local Weather</strong></p>
-          <a href="https://gcamacho079.github.io/LocalWeatherAPI/" target="_blank">
-            <i class="fa fa-external-link portfolio-link" aria-hidden="true"></i>
-          </a>
-          <a href="https://github.com/gcamacho079/LocalWeatherAPI" target="_blank">
-            <i class="fa fa-github portfolio-link" aria-hidden="true"></i>
-          </a>
-          <p>A local weather application utilizing <strong>jQuery</strong> and the <strong>Open Weather API</strong>. Features on-click temperature conversion and background images that vary depending on the temperature.</p>
-        </div>
-
-        <hr>
-
-        <div class="gallery-object">
-          <a href="http://www.thewilderband.com/" target="_blank">
-            <img class="portfolio-image" src="images/wilderband.jpg" alt="Screenshot of The Wilder band's website">
-          </a>
-          <p><strong>The Wilder Band Website</strong></p>
-          <a href="http://www.thewilderband.com/" target="_blank">
-            <i class="fa fa-external-link portfolio-link" aria-hidden="true"></i>
-          </a>
-          <a href="https://github.com/gcamacho079/new-wilder-site" target="_blank">
-            <i class="fa fa-github portfolio-link" aria-hidden="true"></i>
-          </a>
-          <p>A <strong>Bootstrap</strong> website for Portland rock 'n' roll band, The Wilder. Features a collapsible navigation bar for mobile-viewing.</p>
-        </div>
-
+        <a href="mailto:gcamacho079@gmail.com">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </a>
       </div>
-    </div>
-  </div>
-
-  <div class="section" id="contact">
-    <div class="content-wrapper">
-      <h3>Contact</h3>
-      <a href="https://github.com/gcamacho079" target="_blank">
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </a>
-
-      <a href="https://www.linkedin.com/in/guadalupe-camacho-008a57115" target="_blank">
-        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-      </a>
-
-      <a href="mailto:gcamacho079@gmail.com">
-        <i class="fa fa-envelope" aria-hidden="true"></i>
-      </a>
-    </div>
-  </div>
+    </section>
+  </main>
 
   <footer class="section_alt">
     <div class="content-wrapper">
