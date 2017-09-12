@@ -144,6 +144,7 @@ p {
      -moz-transition-duration: .5s;
      -o-transition-duration: .5s;
      transition-duration: .5s;
+     transition-property: font-size, color;
  }
 
  .fa:hover {
@@ -173,6 +174,7 @@ p {
    -moz-transition-duration: .5s;
    -o-transition-duration: .5s;
    transition-duration: .5s;
+   transition-property: box-shadow, opacity;
  }
 
  .portfolio-image:hover {
