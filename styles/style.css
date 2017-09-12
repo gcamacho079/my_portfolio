@@ -140,11 +140,16 @@ p {
 
  .fa {
      color: #333;
+     -webkit-transition-duration: .5s;
+     -moz-transition-duration: .5s;
+     -o-transition-duration: .5s;
+     transition-duration: .5s;
  }
 
- .fa:hover,
- .fa:focus {
+ .fa:hover {
+   font-size: 3.5em;
    color: #7DCC93;
+
  }
 
 
@@ -164,6 +169,10 @@ p {
    border-radius: .5em;
    padding: .5em;
    opacity: 0.7;
+   -webkit-transition-duration: .5s;
+   -moz-transition-duration: .5s;
+   -o-transition-duration: .5s;
+   transition-duration: .5s;
  }
 
  .portfolio-image:hover {
