@@ -1,0 +1,150 @@
+$neon-pink: #FC53A8;
+
+html {
+    background-image: url('/images/milkyway.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: 'Roboto Mono', monospace;
+  color: #bab9da;
+}
+
+nav {
+  align-self: flex-start;
+}
+
+/****************
+ General
+ ****************/
+
+a {
+  font-family: 'Roboto', sans-serif;
+  color: #bab9da;
+  text-decoration: none;
+}
+
+#code-icon {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px;
+}
+
+.fas {
+  color: #47f5fc;
+  font-size: 3em;
+  transition-duration: .2s;
+}
+
+.fas:hover {
+  text-shadow: 0 0 0.1em #d7fdff, 0 0 0.3em #d7fdff, 0 0 0.2em #47f5fc, 0 0 0.4em #47f5fc, 0 0 2em #47f5fc, 0 0 4em #47f5fc, 0 0 6em #47f5fc;
+}
+
+
+/****************
+ Contact Bar
+ ****************/
+
+.contact {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: .5em;
+}
+
+.contact-fa {
+  color: $neon-pink;
+  font-size: 1.1em;
+  border: 2px solid $neon-pink;
+  padding: .4em;
+  margin-bottom: .4em;
+  border-radius: 50%;
+  transition-duration: .2s;
+
+  :hover {
+    color: #ffffff;
+    background-color: $neon-pink;
+  }
+}
+
+
+@media screen and (min-width: 770px) {
+  .contact {
+    width: 4em;
+    right: 0;
+    padding: 1.5em 1.5em .5em 1.5em;
+  }
+
+  .contact-fa {
+    margin-bottom: 1.2em;
+  }
+}
+
+/****************
+ Hero Section
+ ****************/
+
+.hero {
+  min-height: 100vh;
+  background-color: #000000;
+  background-image: url("/images/futuristic.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 3px solid #FC53A8;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #FC53A8;
+  font-family: 'Monoton', sans-serif;
+  text-shadow: 0 0 .5em #ffedf6, 0 0 .5em #ffedf6, 0 0 1.2em #FC53A8, 0 0 1.5em #FC53A8, 0 0 3em #FC53A8, 0 0 4em #FC53A8, 0 0 6em #FC53A8;
+}
+
+.headline--jumbo {
+  font-size: 3.5em;
+  font-size: 5vw;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  letter-spacing: .1em;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  /*color: #47f5fc;*/
+}
+
+.headline--subtitle {
+  font-size: 1.8em;
+  font-size: 3.4vw;
+}
+
+/****************
+ About Section
+ ****************/
+
+.about {
+  min-height: 100vh;
+}
+
+.bookfolio {
+  background-image: url('/images/programming-quote-2.png');
+  height: 227px;
+  width: 156px;
+  background-size: cover;
+  border-radius: 10px;
+}

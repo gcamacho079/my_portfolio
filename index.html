@@ -1,229 +1,43 @@
 <!DOCTYPE html>
-<html lang="en-us">
 <head>
-  <title>Lupe Camacho - Web Dev Portfolio</title>
   <meta charset="utf-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Normalize -->
-  <link type="text/css" rel="stylesheet" href="styles/normalize.css">
-
-  <!-- Icons -->
-  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:300|Dawning+of+a+New+Day|Source+Sans+Pro:400,400i,700" rel="stylesheet">
-
-  <!-- My Styling -->
-  <link type="text/css" rel="stylesheet" href="styles/style.css">
-  <link type="text/css" rel="stylesheet" href="styles/responsive.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Monoton|Roboto|Roboto+Mono" rel="stylesheet">
+  <link href="styles/main.css" type="text/css" rel="stylesheet">
 
 </head>
 
+
 <body>
+  <div>
+  <section class="hero">
+    <i id="code-icon" class="fas fa-code"></i>
+    <!--<nav>
+      <a href="#contact">Contact</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+    </nav>-->
+    <h1 class="headline--jumbo">Lupe Camacho</h1>
+    <h2 class="headline--subtitle">Web Developer</h2>
 
-  <header id="top" class="section_top">
-    <h1>Lupe Camacho</h1>
-    <h2>web developer</h2>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
+  </section>
 
-    <!--*********** ABOUT ME ***************-->
-
-
-
-    <section class="section" id="about">
-      <div class="content-wrapper">
-
-        <h3 id="about-me">About Me</h3>
-
-        <div id="blurb" class="clearfix">
-
-          <img id="my-pic" src="images/me.jpg" alt="Picture of me">
-
-          <div class="aside">
-            <p><strong>Hi!</strong> My name's Lupe and I'm a self-taught web developer.</p>
-
-            <p>I'm currently employed as a web designer and developer for a small company here in Portland.</p>
-
-            <p>When I'm not reading, crafting, or otherwise creating, I'm learning everything I can about programming and development with the help of <a href="http://www.freecodecamp.com" target="_blank">FreeCodeCamp</a> and <a href="https://treehouse.7eer.net/c/379674/228915/3944" target="_blank">Treehouse</a>.</p>
-          </div>
-
-          <div id="spacer">
-          </div>
-
-
-        </div>
-
-        <p>I'm currently working with:</p>
-        <img class="language-logo" src="images/HTML5_oval_logo.png" alt="HTML5 logo">
-        <img class="language-logo" src="images/CSS3_logo.png" alt="CSS3 logo">
-        <img class="language-logo" src="images/200px-Ruby_logo.png" alt="Ruby logo">
-        <img class="language-logo" src="images/Javascript-logo.png" alt="Javascript logo">
-        <img class="language-logo" src="images/jquery.png" alt="jQuery logo">
-
-        <div id="terminal-block">
-          <p><strong>My Philosophy</strong></p>
-
-          <div id="mini-terminal">
-            <p>"<span class="terminal-highlight">Coding*</span>, to me, is simply thinking through my fingers."</p>
-            <p>- <span id="end-line">Isaac Asimov</span></p>
-          </div>
-
-          <p style="text-align:left"><small><strong><span class="terminal-highlight">*Rewritten</span></strong> by me.</small></p>
-
-        </div>
+  <section class="about">
+    <div class='wrapper'>
+      <div class="bookfolio">
       </div>
-    </section>
-
-    <!--*********** PORTFOLIO ***************-->
-
-    <section class="section_alt" id="portfolio">
-      <div class="content-wrapper">
-        <h3>Portfolio</h3>
-        <div class="gallery">
-
-          <div class="gallery-object">
-            <a href="http://codepen.io/gcamacho079/full/EKaXvL/" target="_blank">
-              <img class="portfolio-image" src="images/asimov_tribute.jpg" alt="Screenshot of my FreeCodeCamp tribute page project">
-            </a>
-            <p><strong>Tribute Page</strong></p>
-            <a href="http://codepen.io/gcamacho079/full/EKaXvL/" target="_blank">
-              <i class="fa fa-external-link portfolio-link" aria-hidden="true"></i>
-            </a>
-            <a href="http://codepen.io/gcamacho079/pen/EKaXvL/" target="_blank">
-              <i class="fa fa-codepen portfolio-link" aria-hidden="true"></i>
-            </a>
-
-            <p>A tribute page for prolific science fiction author Isaac Asimov, built using <strong>Bootstrap</strong>.</p>
-          </div>
-
-          <hr>
-
-          <div class="gallery-object">
-            <a href="https://gcamacho079.github.io/wikiviewer/" target="_blank">
-              <img class="portfolio-image" src="images/wikiviewer.png" alt="Screenshot of my FreeCodeCamp Wikipedia Viewer project">
-            </a>
-            <p><strong>Wikipedia Viewer</strong></p>
-            <a href="https://gcamacho079.github.io/wikiviewer/" target="_blank">
-              <i class="fa fa-external-link portfolio-link" aria-hidden="true"></i>
-            </a>
-            <a href="https://github.com/gcamacho079/wikiviewer" target="_blank">
-              <i class="fa fa-github portfolio-link" aria-hidden="true"></i>
-            </a>
-            <p>A Wikipedia artice previewer that utilizes the <strong>MediaWiki API</strong> to search for the user's query.</p>
-          </div>
-
-          <hr>
-
-          <div class="gallery-object">
-            <a href="https://gcamacho079.github.io/random-quote-generator/" target="_blank">
-              <img class="portfolio-image" src="images/randomquotes.jpg" alt="Screenshot of my FreeCodeCamp random quote generator project">
-            </a>
-            <p><strong>Random Quote Generator</strong></p>
-            <a href="https://gcamacho079.github.io/random-quote-generator/" target="_blank">
-              <i class="fa fa-external-link portfolio-link" aria-hidden="true"></i>
-            </a>
-            <a href="https://github.com/gcamacho079/random-quote-generator" target="_blank">
-              <i class="fa fa-github portfolio-link" aria-hidden="true"></i>
-            </a>
-            <p>A random quote generator using a <strong>JSON-encoded, third-party API</strong>. The user can make requests for additional quotes by clicking the "Randomize" button. Quotes that meet certain length requirements are Tweetable.</p>
-          </div>
-
-          <hr>
-
-          <div class="gallery-object">
-            <a href="https://gcamacho079.github.io/google-homepage/" target="_blank">
-              <img class="portfolio-image" src="images/google_rebuild.jpg" alt="Screenshot of my Google homepage rebuild project (The Odin Project)">
-            </a>
-            <p><strong>Google Rebuild</strong></p>
-            <a href="https://gcamacho079.github.io/google-homepage/" target="_blank">
-              <i class="fa fa-external-link portfolio-link" aria-hidden="true"></i>
-            </a>
-            <a href="https://github.com/gcamacho079/google-homepage" target="_blank">
-              <i class="fa fa-github portfolio-link" aria-hidden="true"></i>
-            </a>
-            <p>A (non-functional) rebuild of the Google search homepage, using media queries to achieve a <b>responsive, mobile-friendly</b> layout. The desktop version features an "I'm Feeling Lucky" button that repopulates with a randomized saying after mouseover.</p>
-          </div>
-
-          <hr>
-
-          <div class="gallery-object">
-            <a href="https://gcamacho079.github.io/jSketch/" target="_blank">
-              <img class="portfolio-image" src="images/jsketch.jpg" alt="Screenshot of my etch-a-sketch project (The Odin Project)">
-            </a>
-            <p><strong>jSketch</strong></p>
-            <a href="https://gcamacho079.github.io/jSketch/" target="_blank">
-              <i class="fa fa-external-link portfolio-link" aria-hidden="true"></i>
-            </a>
-            <a href="https://github.com/gcamacho079/jSketch" target="_blank">
-              <i class="fa fa-github portfolio-link" aria-hidden="true"></i>
-            </a>
-            <p>A browser-based etch-a-sketch built with <strong>Javascript</strong> and <strong>jQuery</strong>.</p>
-          </div>
-
-          <hr>
-
-          <div class="gallery-object">
-            <a href="https://gcamacho079.github.io/LocalWeatherAPI/" target="_blank">
-              <img class="portfolio-image" src="images/weather_api.jpg" alt="Screenshot of my local weather app project">
-            </a>
-            <p><strong>Local Weather</strong></p>
-            <a href="https://gcamacho079.github.io/LocalWeatherAPI/" target="_blank">
-              <i class="fa fa-external-link portfolio-link" aria-hidden="true"></i>
-            </a>
-            <a href="https://github.com/gcamacho079/LocalWeatherAPI" target="_blank">
-              <i class="fa fa-github portfolio-link" aria-hidden="true"></i>
-            </a>
-            <p>A local weather application utilizing <strong>jQuery</strong> and the <strong>Open Weather API</strong>. Features on-click temperature conversion and background images that vary depending on the temperature.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!--*********** CONTACT ***************-->
-
-    <section class="section" id="contact">
-      <div class="content-wrapper">
-        <h3>Contact</h3>
-        <a href="https://github.com/gcamacho079" target="_blank">
-          <i class="fa fa-github" aria-hidden="true"></i>
-        </a>
-
-        <a href="https://www.linkedin.com/in/guadalupe-camacho-008a57115" target="_blank">
-          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-        </a>
-
-        <a href="mailto:gcamacho079@gmail.com">
-          <i class="fa fa-envelope" aria-hidden="true"></i>
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="section_alt">
-    <div class="content-wrapper">
-      <a href="#top">
-        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-      </a>
-      <p>&copy; 2017 Guadalupe Camacho</p>
-      <p>View the <a href="https://github.com/gcamacho079/my_portfolio" target="_blank">Github repository</a> for this project.</p>
     </div>
-  </footer>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+  </section>
 
+  <section class="contact">
+    <a href="www.linkedin.com"><i class="contact-fa fab fa-linkedin-in"></i></a>
+    <a href="mailto:hello@lupecamacho.com"><i class="contact-fa far fa-envelope"></i></a>
+    <a href="www.github.com"><i class="contact-fa fab fa-github-alt"></i></a>
+  </section>
 </body>
 </html>
