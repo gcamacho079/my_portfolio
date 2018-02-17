@@ -1,47 +1,24 @@
-html {
+/****************
+General
+****************/
+body {
   background-image: url("/images/milkyway.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; }
-
-body {
+  background-attachment: fixed;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0px;
-  font-family: 'Roboto Mono', monospace;
-  color: #bab9da; }
+  margin: 0px; }
 
-nav {
-  -ms-flex-item-align: start;
-      align-self: flex-start; }
-
-/****************
- General
- ****************/
 a {
   font-family: 'Roboto', sans-serif;
   color: #bab9da;
   text-decoration: none; }
 
-#code-icon {
-  position: fixed;
-  left: 0;
-  top: 0;
-  padding: 20px; }
-
-.fas {
-  color: #47f5fc;
-  font-size: 3em;
-  -webkit-transition-duration: .2s;
-          transition-duration: .2s; }
-
-.fas:hover {
-  text-shadow: 0 0 0.1em #d7fdff, 0 0 0.3em #d7fdff, 0 0 0.2em #47f5fc, 0 0 0.4em #47f5fc, 0 0 2em #47f5fc, 0 0 4em #47f5fc, 0 0 6em #47f5fc; }
-
 /****************
- Contact Bar
- ****************/
+Contact Bar
+****************/
 .contact {
   position: fixed;
   bottom: 0;
@@ -58,7 +35,7 @@ a {
   border-radius: 50%;
   -webkit-transition-duration: .2s;
           transition-duration: .2s; }
-  .contact-fa :hover {
+  .contact-fa:hover {
     color: #ffffff;
     background-color: #FC53A8; }
 
@@ -71,8 +48,11 @@ a {
     margin-bottom: 1.2em; } }
 
 /****************
- Hero Section
- ****************/
+Hero Section
+****************/
+section.page-section {
+  border-bottom: 3px solid #FC53A8; }
+
 .hero {
   min-height: 100vh;
   background-color: #000000;
@@ -80,7 +60,6 @@ a {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom: 3px solid #FC53A8;
   text-align: center;
   margin: 0;
   display: -webkit-box;
@@ -97,10 +76,19 @@ a {
       -ms-flex-align: center;
           align-items: center; }
 
+/****************
+Typography
+****************/
+body {
+  font-family: 'Roboto Mono', monospace;
+  color: #bab9da; }
+  body p {
+    line-height: 1.4em; }
+
 h1 {
   color: #FC53A8;
   font-family: 'Monoton', sans-serif;
-  text-shadow: 0 0 .5em #ffedf6, 0 0 .5em #ffedf6, 0 0 1.2em #FC53A8, 0 0 1.5em #FC53A8, 0 0 3em #FC53A8, 0 0 4em #FC53A8, 0 0 6em #FC53A8; }
+  text-shadow: 0 0 0.5em #ffedf6, 0 0 0.5em #ffedf6, 0 0 1.2em #FC53A8, 0 0 1.5em #FC53A8, 0 0 3em #FC53A8, 0 0 4em #FC53A8, 0 0 6em #FC53A8; }
 
 .headline--jumbo {
   font-size: 3.5em;
@@ -111,18 +99,27 @@ h1 {
 
 h2 {
   font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: .5em;
-  /*color: #47f5fc;*/ }
+  color: #47f5fc; }
 
 .headline--subtitle {
+  letter-spacing: .5em;
+  text-transform: uppercase;
   font-size: 1.8em;
   font-size: 3.4vw; }
 
+.section-header {
+  text-transform: uppercase;
+  margin-top: 1.5em; }
+
+.own-line {
+  display: block;
+  text-align: center; }
+
 /****************
- About Section
- ****************/
-.about {
+About Section
+****************/
+.about,
+.portfolio {
   min-height: 100vh; }
 
 .bookfolio {
@@ -131,3 +128,84 @@ h2 {
   width: 156px;
   background-size: cover;
   border-radius: 10px; }
+
+.wrapper {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3em 0; }
+
+.skill-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 90%;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.card {
+  background-color: #333;
+  border-radius: 6px;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 1%;
+  width: 31.33%;
+  max-width: 31.33%;
+  opacity: .78; }
+  .card p {
+    color: #47f5fc;
+    font-size: .8em;
+    margin: .5em auto; }
+
+.skill-icon {
+  font-size: 4em;
+  margin: .2em;
+  color: #47f5fc;
+  font-size: 5em;
+  font-size: 9vw;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s; }
+  .skill-icon:hover {
+    text-shadow: 0 0 0.1em #c4fcfe, 0 0 0.3em #c4fcfe, 0 0 0.2em #47f5fc, 0 0 0.4em #47f5fc, 0 0 2em #47f5fc, 0 0 4em #47f5fc, 0 0 6em #47f5fc; }
+
+@media screen and (min-width: 900px) {
+  .skill-icon {
+    font-size: 5em; }
+  .card {
+    width: 23%;
+    max-width: 23%; }
+    .card p {
+      margin: 1em auto; } }
+
+/****************
+Portfolio Section
+****************/
+.portfolio {
+  background-color: #333; }
+
+.project-thumb-container {
+  display: inline-block;
+  position: relative; }
+
+.project-thumb {
+  border-radius: 6px;
+  max-width: 200px; }
+
+.thumb-overlay {
+  width: 70px;
+  height: 70px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: -35px;
+  margin-top: -35px; }

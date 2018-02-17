@@ -1,55 +1,49 @@
 $neon-pink: #FC53A8;
+$main-accent: #47f5fc;
+$main-accent-lighten: lighten($main-accent, 25%);
+$text: #bab9da;
 
-html {
-    background-image: url('/images/milkyway.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+@mixin make-upper {
+  text-transform: uppercase;
 }
 
-body {
-  box-sizing: border-box;
-  margin: 0px;
-  font-family: 'Roboto Mono', monospace;
-  color: #bab9da;
+@mixin make-spacey {
+  letter-spacing: .5em;
 }
 
-nav {
-  align-self: flex-start;
+@mixin make-glow {
+  text-shadow: 0 0 0.1em $main-accent-lighten, 
+  0 0 0.3em $main-accent-lighten, 
+  0 0 0.2em $main-accent, 
+  0 0 0.4em $main-accent, 
+  0 0 2em $main-accent, 
+  0 0 4em $main-accent, 
+  0 0 6em $main-accent;
 }
 
 /****************
- General
- ****************/
+General
+****************/
+
+body {
+  background-image: url('/images/milkyway.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  box-sizing: border-box;
+  margin: 0px;
+}
 
 a {
   font-family: 'Roboto', sans-serif;
-  color: #bab9da;
+  color: $text;
   text-decoration: none;
 }
 
-#code-icon {
-  position: fixed;
-  left: 0;
-  top: 0;
-  padding: 20px;
-}
-
-.fas {
-  color: #47f5fc;
-  font-size: 3em;
-  transition-duration: .2s;
-}
-
-.fas:hover {
-  text-shadow: 0 0 0.1em #d7fdff, 0 0 0.3em #d7fdff, 0 0 0.2em #47f5fc, 0 0 0.4em #47f5fc, 0 0 2em #47f5fc, 0 0 4em #47f5fc, 0 0 6em #47f5fc;
-}
-
-
 /****************
- Contact Bar
- ****************/
+Contact Bar
+****************/
 
 .contact {
   position: fixed;
@@ -67,8 +61,8 @@ a {
   margin-bottom: .4em;
   border-radius: 50%;
   transition-duration: .2s;
-
-  :hover {
+  
+  &:hover {
     color: #ffffff;
     background-color: $neon-pink;
   }
@@ -81,15 +75,19 @@ a {
     right: 0;
     padding: 1.5em 1.5em .5em 1.5em;
   }
-
+  
   .contact-fa {
     margin-bottom: 1.2em;
   }
 }
 
 /****************
- Hero Section
- ****************/
+Hero Section
+****************/
+
+%section-break {
+  border-bottom: 3px solid $neon-pink;
+}
 
 .hero {
   min-height: 100vh;
@@ -98,7 +96,6 @@ a {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom: 3px solid #FC53A8;
   text-align: center;
   margin: 0;
   display: flex;
@@ -107,10 +104,31 @@ a {
   align-items: center;
 }
 
+section.page-section {
+  @extend %section-break;
+}
+
+/****************
+Typography
+****************/
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  color: $text;
+  p {
+    line-height: 1.4em;
+  }
+}
+
 h1 {
-  color: #FC53A8;
+  color: $neon-pink;
   font-family: 'Monoton', sans-serif;
-  text-shadow: 0 0 .5em #ffedf6, 0 0 .5em #ffedf6, 0 0 1.2em #FC53A8, 0 0 1.5em #FC53A8, 0 0 3em #FC53A8, 0 0 4em #FC53A8, 0 0 6em #FC53A8;
+  text-shadow: 0 0 .5em #ffedf6, 0 0 .5em #ffedf6, 
+  0 0 1.2em $neon-pink, 
+  0 0 1.5em $neon-pink, 
+  0 0 3em $neon-pink, 
+  0 0 4em $neon-pink, 
+  0 0 6em $neon-pink;
 }
 
 .headline--jumbo {
@@ -121,23 +139,40 @@ h1 {
   letter-spacing: .1em;
 }
 
-h2 {
+%altered-headings {
   font-family: 'Roboto', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: .5em;
-  /*color: #47f5fc;*/
+  color: #47f5fc;
+}
+
+h2 {
+  @extend %altered-headings;
 }
 
 .headline--subtitle {
+  @include make-spacey;
+  @include make-upper;
   font-size: 1.8em;
   font-size: 3.4vw;
 }
 
-/****************
- About Section
- ****************/
+.section-header {
+  @include make-upper;
+  margin-top: 1.5em;
+}
 
-.about {
+.own-line {
+  display: block;
+  text-align: center;
+}
+
+
+
+/****************
+About Section
+****************/
+
+.about,
+.portfolio {
   min-height: 100vh;
 }
 
@@ -147,4 +182,96 @@ h2 {
   width: 156px;
   background-size: cover;
   border-radius: 10px;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3em 0;
+}
+
+.skill-section {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.card {
+  background-color: #333;
+  border-radius: 6px;
+  text-align: center;
+  flex-grow: 1;
+  margin: 1%;
+  width: 31.33%;
+  max-width: 31.33%;
+  opacity: .78;
+  
+  p {
+    color: $main-accent;
+    font-size: .8em;
+    margin: .5em auto;
+  }
+}
+
+.skill-icon {
+  font-size: 4em;
+  margin: .2em;
+  color: $main-accent;
+  font-size: 5em;
+  font-size: 9vw;
+  transform: translateZ(0);
+  transition-duration: .2s;
+  
+  &:hover {
+    @include make-glow;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .skill-icon {
+    font-size: 5em;
+  }
+  
+  .card {
+    width: 23%;
+    max-width: 23%;
+    
+    p {
+      margin: 1em auto;
+    }
+  }
+}
+
+/****************
+Portfolio Section
+****************/
+
+.portfolio {
+  background-color: #333;
+  
+}
+
+.project-thumb-container {
+  display: inline-block;
+  position: relative;
+}
+
+.project-thumb {
+  border-radius: 6px;
+  max-width: 200px;
+}
+
+.thumb-overlay {
+  width: 70px;
+  height: 70px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: -35px;
+  margin-top: -35px;
 }
